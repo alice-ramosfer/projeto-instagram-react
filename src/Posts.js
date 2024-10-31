@@ -1,3 +1,5 @@
+import React from "react"
+
 export default function Posts(){
     const posts =[{usuario:{src:"assets/img/meowed.svg",alt:"meowed"}, conteudo:{src:"assets/img/gato-telefone.svg", alt:"gato-telefone"}, fundo:{src:"assets/img/respondeai.svg" ,alt:"respondeai",texto:"101.523"}},
                   {usuario:{src:"assets/img/barked.svg",alt:"barked"}, conteudo:{src:"assets/img/dog.svg", alt:"dog"}, fundo:{src:"assets/img/adorable_animals.svg" ,alt:"adorable_animals",texto:"99.159"}},
@@ -41,6 +43,13 @@ function Topo({src, alt}){
 
 
 function Fundo({src,alt,texto}){
+    const [iconeSalvar, seticoneSalvar] = React.useState("bookmark-outline");
+    function salvarPost(){
+        seticoneSalvar(iconeAtual => iconeAtual === "bookmark-outline" ? "bookmark" : "bookmark-outline")
+       
+
+    }
+
     return(
         <>
             <div className="acoes">
@@ -50,7 +59,7 @@ function Fundo({src,alt,texto}){
                   <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
                 <div>
-                  <ion-icon name="bookmark-outline"></ion-icon>
+                  <ion-icon name={iconeSalvar} onClick ={salvarPost}></ion-icon>
                 </div>
               </div>
 
