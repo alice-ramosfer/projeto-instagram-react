@@ -6,13 +6,17 @@ export default function User(){
 
     function alteraNome(){
         const nomeDigitado = prompt("Qual será o nome");
-        if (nomeDigitado != "" ){setNome(nomeDigitado);}
+        if (nomeDigitado != "" ){
+            setNome(nomeDigitado);
+        }
 
     }
 
     function alteraImg(){
         const novaImg = prompt("Digite o link da imagem")
-        if(novaImg != ""){setImg(novaImg);}
+        if(novaImg != ""){
+            setImg(novaImg);
+        }
     }
 
     return(
