@@ -12,7 +12,7 @@ export default function Posts(){
                   {usuario:{src:"assets/img/barked.svg",alt:"lola"}, 
                   conteudo:{src:"assets/img/dog.svg", alt:"dog"}, 
                   fundo:{src:"assets/img/adorable_animals.svg" ,alt:"adorable_animals",texto:"99159"}}
-    ]
+    ];
 
     return (
         <>

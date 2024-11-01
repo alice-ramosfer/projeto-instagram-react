@@ -9,7 +9,7 @@ export default function Suggestions(){
             {listaSugetoes.map(({src, alt}) => ( <Usuarios src ={src} alt={alt} key={alt}/>) )}
         
         </>
-    )
+    );
 }
  
 function Usuarios({src,alt}){
@@ -26,5 +26,5 @@ function Usuarios({src,alt}){
                 <div className="seguir">Seguir</div>
             </div>
         </>
-    )
+    );
 }

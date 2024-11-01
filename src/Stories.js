@@ -9,22 +9,20 @@ export default function Stories(){
         {src:"assets/img/memeriagourmet.svg", alt:"memeriagourmet"}]
     
     return(
-        <>
+
             <div className="stories">
                 {dadosStories.map(seguidor => (<ExibeDados src ={seguidor.src} alt = {seguidor.alt}  key={seguidor.alt}/>))}
                 <div className="setinha">
                     <ion-icon name="chevron-forward-circle"></ion-icon>
                 </div>
             </div>
-        
-        
-        </>
-    )
+
+    );
 }
 
 function ExibeDados({src,alt}){
     return (
-        <>  
+
             <div className="story">
                 <div className="imagem">
                     <img src={src} alt={alt}/>
@@ -33,6 +31,6 @@ function ExibeDados({src,alt}){
                     {alt}
                 </div>
             </div>
-        </>
-    )
+
+    );
 }

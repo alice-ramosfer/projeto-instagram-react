@@ -15,5 +15,5 @@ export default function SideBar(){
                 © 2021 INSTAGRAM DO FACEBOOK
             </div>
         </>
-    )
+    );
 }
